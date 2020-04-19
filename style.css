@@ -275,7 +275,6 @@ main.about h1 {
   color: #353535;
 }
 
-
 /*** Description ***/
 .about .description {
   padding: 0 1rem 2rem;
@@ -298,6 +297,7 @@ main.about h1 {
   margin-top: 1rem;
 }
 
+
 /*** Contato ***/
 main.contact {
   min-height: 100vh;
@@ -306,6 +306,41 @@ main.contact {
 
 iframe {
   height: 100vh;
+}
+
+
+/*** Saiba Mais ***/
+main.about_more {
+  display: block;
+}
+
+.about_more h1 {
+  margin-bottom: 2rem;
+}
+
+.about_more h1::after {
+  content: "";
+  display: block;
+  height: .05rem;
+  width: 65%;
+  background: #474747;
+  margin-top: .5rem;
+}
+
+.about_more h2, .about_more p {
+  font-size: 1em;
+}
+
+.about_more article {
+  margin-top: 1.5rem;
+}
+
+.about_more a {
+  color: #ae2b2b;
+}
+
+.about_more a:hover {
+  text-decoration: underline;
 }
 
 /*** Small devices (landscape phones, 576px and up) ***/
