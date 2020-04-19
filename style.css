@@ -36,6 +36,8 @@ p {
 /*** Header ***/
 header {
   background-color: #000;
+  background: url(https://www.uma.pt/wp-content/themes/uma/images/covid_banner.jpg) center no-repeat;
+  background-size: cover;
   color: #fff;
   font-weight: 600;
   position: fixed;
@@ -105,7 +107,7 @@ nav {
   bottom: 0;
   width: 20rem;
   max-width: 75%;
-  background: #000;
+  background: #353535;
   overflow-x: auto;
   z-index: 2;
   -webkit-transition: all 500ms ease;
@@ -144,7 +146,7 @@ nav a:hover {
 
 /*** Footer ***/
 footer {
-  background-color: #000;
+  background-color: #353535;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -212,7 +214,7 @@ main.about h1 {
 
 /*** Information ***/
 .information {
-  background-color: #323232;
+  background-color: #7a7a7a;
   color: #ebebeb;
   padding: 6rem 1rem 2rem;
 }
@@ -270,7 +272,7 @@ main.about h1 {
 }
 
 .information a:hover {
-  color: #878787;
+  color: #353535;
 }
 
 
@@ -315,10 +317,13 @@ iframe {
     display: flex;
   }
 
-  .media,
-  .text {
-    width: 50%;
+  .media {
+    width: 60%;
     height: 13rem;
+  }
+
+  .text {
+    width: 40%;
   }
 
 
@@ -386,15 +391,6 @@ iframe {
     height: 16rem;
   }
 
-  .media {
-    width: 60%;
-  }
-
-  .text {
-    width: 40%;
-  }
-
-
   /*** Sobre ***/
   /*** Main ***/
   main.about {
@@ -442,6 +438,7 @@ iframe {
 
   /*** Header ***/
   /*** Nav ***/
+  /*
   input#control-nav, 
   .control-nav {
     display: none;
@@ -475,6 +472,7 @@ iframe {
     display: inline;
     margin-left: 4rem;
   }
+  */
 
   /*** Home ***/
   /*** Main ***/
@@ -526,7 +524,7 @@ iframe {
   }
 
   .text {
-    height: 10rem;
+    height: 7rem;
   }
 
 
@@ -554,7 +552,7 @@ iframe {
   }
 
   .text {
-    height: 8rem;
+    height: 5rem;
   }
 
 }
