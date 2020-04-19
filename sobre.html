@@ -2,64 +2,120 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Covid-19 Good News - Sobre</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>Covid-19 Boas Notícias | Home</title>
 </head>
 <body>
-  <header>
-    <div class="container">
 
-      <div class="logo">
-        Covid-19 Good News
-      </div>
-  
-      <div class="navigation">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="saibamais.html">Saiba mais</a></li>
-          </ul>
-        </nav>
-      </div>
+  <header class="content">
 
+    <div class="logo">
+      <a href="index.html" title="Covid-19">Covid-19</a>
     </div>
-  </header>
 
-  <main>
+    <div class="navigation">
+
+      <input type="checkbox" id="control-nav" />
+      <label for="control-nav" class="control-nav"></label>
+      <label for="control-nav" class="control-nav-close"></label>
     
-    <h1>Sobre</h1>
-    <p>Subtítulo</p>
-    <figure>
-      Minha foto
-    </figure>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque sed 
-      vero nulla aspernatur voluptatum accusantium? Itaque eligendi voluptatem 
-      ducimus optio natus aspernatur, nisi eveniet, earum quod alias repellat 
-      dolorem.
-    </p>
-    
-  </main>
-
-  <footer>
-    <div class="container">
-
-      <div class="logo">
-        Covid-19 Good News
-      </div>
-  
-      <div class="navigation">
+      <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="contato.html">Contato</a></li>
           <li><a href="saibamais.html">Saiba mais</a></li>
         </ul>
-      </div>
+      </nav>
 
     </div>
+
+  </header>
+
+  <main class="about">
+    
+    <section class="information">
+
+      <div class="information-media">
+        <img src="images/edenpaulocruz.jpg" alt="Foto de Eden Paulo Cruz">
+      </div>
+      
+      <div class="information-text">
+
+        <h1>Eden Paulo Cruz</h1>
+        <p>Desenvolvedor e eterno aprendiz</p>
+        <ul>
+          
+          <li>
+            <a
+              href="https://www.linkedin.com/in/edenpaulocruz/" 
+              title="Linkedin Eden Paulo Curz" 
+              target="_blank"
+            >
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          
+          <li>
+            <a 
+              href="https://github.com/edenpaulocruz" 
+              title="GitHub Eden Paulo Cruz"
+              target="_blank"
+            >
+              <i class="fa fa-github-square" aria-hidden="true"></i>
+            </a>
+          </li>
+          
+          <li>
+            <a
+              href="https://twitter.com/edenpaulocruz"
+              title="Twitter Eden Paulo Cruz"
+              target="_blank"
+            >
+              <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            </a>
+          </li>
+        
+        </ul>
+
+      </div>
+    
+    </section>
+
+    <section class="description">
+    
+      <h1>Sobre Mim</h2>
+    
+      <p>Olá!</p>
+    
+      <p>Meu nome é Eden Paulo Damascena da Cruz.</p>
+    
+      <p>Minha paixão por programação de computadores começou no ensino médio, conhecido anteriormente como 2º grau, onde cursei Processamento de Dados e tive contato com Turbo Pascal, dBase III Plus Programado e Clipper.</p>
+    
+      <p>Porém me distanciei completamente da programação, indo trabalhar com suporte técnico, que ainda paga algumas contas (por enquanto). Mas a paixão adormecida despertou e se tornou muito mais forte quando conheci as tecnologias web. Desde então, tenho investido para tornar-me um Dev.</p>
+    
+      <p>Cursei uma gradução em Análise e Desenvolvimento de Sistemas e venho estudando através de cursos, livros, blogs, vídeos, fóruns, etc a fim de estar pronto para o mercado.</p>
+    
+      <p>O que mais me excita no desenvolvimento é poder criar soluções que resolvam os problemas de pessoas e organizações. Compartilhar o conhecimento é, também, algo em que tenho muito prazer.</p>
+    
+      <p>Gosto de música, filmes e séries, futebol, livros, estar com a família, amigos e meus bichinhos de estimação, não necessariamente nesta ordem.</p>
+    
+    </section>
+
+  </main>
+
+  <footer>
+
+    <div class="logo">
+      <p><small>Covid-19</small></p>
+    </div>
+
+    <div class="copy">
+      <p><small>by edenpaulocruz</small></p>
+    </div>
+
   </footer>
 
 </body>

@@ -25,6 +25,7 @@ body {
 
 p {
   line-height: 1.5;
+  color: #323232;
 }
 
 .content {
@@ -141,6 +142,27 @@ nav a:hover {
 }
 
 
+/*** Footer ***/
+footer {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .75em;
+  font-weight: normal;
+  padding: .5rem 2rem;
+}
+
+footer .logo {
+  padding: 0;
+  border: none
+}
+
+footer p {
+  color: #fff;
+}
+
+
 /*** Main Content ***/
 main {
   padding: 5rem 1rem 1rem;
@@ -148,6 +170,7 @@ main {
 }
 
 
+/*** Home ***/
 /*** Articles ***/
 article {
   margin-bottom: 1rem;
@@ -175,27 +198,109 @@ article > a {
 }
 
 
-/*** Footer ***/
-footer {
-  background-color: #000;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: .75em;
-  font-weight: normal;
-  padding: .5rem 2rem;
+/*** Sobre ***/
+/*** Main ***/
+main.about {
+  margin: 0;
+  padding: 0;
 }
 
-footer .logo {
-  padding: 0;
-  border: none
+main.about h1 {
+  font-size: 2em;
+  margin-top: 2rem;
+}
+
+/*** Information ***/
+.information {
+  background-color: #323232;
+  color: #ebebeb;
+  padding: 6rem 1rem 2rem;
+}
+
+.information img {
+  display: block;
+  width: 60%;
+  border-radius: 50%;
+  margin: 1rem auto 2rem;
+}
+
+.information h1 {
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.information h1::before {
+  content: "";
+  display: block;
+  height: .05rem;
+  width: 45%;
+  margin: 1rem auto;
+  background: #474747;
+}
+
+.information p {
+  text-align: center;
+  color: #fff;
+}
+
+.information p::after {
+  content: "";
+  display: block;
+  height: .05rem;
+  width: 30%;
+  margin: 1rem auto;
+  background: #474747;
+}
+
+.information ul {
+  width: 60%;
+  margin: 3rem auto 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3em;
+}
+
+.information li {
+  list-style: none;
+}
+
+.information a {
+  display: block;
+  color: #ebebeb;
+}
+
+.information a:hover {
+  color: #878787;
+}
+
+
+/*** Description ***/
+.about .description {
+  padding: 0 1rem 2rem;
+}
+.about .description h1 {
+  margin-bottom: 1.5rem;
+  color: #323232;
+}
+
+.about .description h1::after {
+  content: "";
+  display: block;
+  height: .05rem;
+  width: 65%;
+  margin-top: .05rem;
+  background: #000;
+}
+
+.about .description p {
+  margin-top: 1rem;
 }
 
 
 /*** Small devices (landscape phones, 576px and up) ***/
 @media (min-width: 576px) {
 
+  /*** Home ***/
   /*** Articles ***/
   article > a {
     display: flex;
@@ -207,12 +312,57 @@ footer .logo {
     height: 13rem;
   }
 
+
+  /*** Sobre ***/
+  /*** Header ***/
+  .content { 
+    padding: 1rem 2rem;
+  }
+
+  /*** Main ***/
+  /*** Information ***/
+  .information {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 6rem 2rem 2rem;
+  }
+
+  .information img {
+    margin: 0;
+    width: 75%;
+  }
+
+  .information ul {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  main.about h1 {
+    margin-top: 0;
+  }
+
+  .information h1::before {
+    margin-top: 0;
+  }
+
+  .information-text {
+    align-self: center;
+  }
+
+  /*** Description ***/
+  .about .description {
+    padding: 2rem;
+  }
+
 }
 
 
 /*** Medium devices (tablets, 768px and up) ***/
 @media (min-width: 768px) {
   
+  /*** Home ***/
+  /*** Main ***/
   main {
     padding-top: 6rem;
   }
@@ -229,11 +379,43 @@ footer .logo {
     width: 40%;
   }
 
+
+  /*** Sobre ***/
+  /*** Main ***/
+  main.about {
+    min-height: 100vh;
+    display: flex;
+  }
+
+  main.about h1 {
+    font-size: 1.5em;
+  }
+
+  .information {
+    display: block;
+    padding-top: 8rem;;
+  }
+
+  .information img {
+    width: 12rem;
+    margin: 0 0 2rem; 
+  }
+
+  .information ul {
+    width: 100%;
+    margin-top: 2rem
+  }
+
+  .about .description {
+    padding-top: 8rem;;
+  }
+
 }
 
 /*** Large devices (desktops, 992px and up) ***/
 @media (min-width: 992px) {
 
+  /*** General ***/
   html {
     font-size: 18px;
   }
@@ -242,6 +424,9 @@ footer .logo {
     padding: 2rem;
   }
 
+
+  /*** Header ***/
+  /*** Nav ***/
   input#control-nav, 
   .control-nav {
     display: none;
@@ -276,6 +461,8 @@ footer .logo {
     margin-left: 4rem;
   }
 
+  /*** Home ***/
+  /*** Main ***/
   main {
     padding: 8rem 2rem 2rem;
     display: grid;
@@ -325,6 +512,13 @@ footer .logo {
 
   .text {
     height: 10rem;
+  }
+
+
+  /*** Sobre ***/
+  /*** Main ***/
+  .information, .about .description {
+    padding-top: 10rem;
   }
 
 }
