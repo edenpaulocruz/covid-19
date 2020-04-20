@@ -35,4 +35,4 @@ As fontes selecionadas para as notícias foram:
 
 ## Página do projeto
 
-O projeto está hospedado no GitHub Pages no endereço e pode ser acessado neste [link](edenpaulocruz.github.io/covid-19/).
+O projeto está hospedado no GitHub Pages no endereço e pode ser acessado neste [link](https://edenpaulocruz.github.io/covid-19/).
